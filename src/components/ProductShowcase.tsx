@@ -6,42 +6,42 @@ import { Star, ShoppingCart, Zap, Award, Truck, ArrowRight } from "lucide-react"
 const products = [
   {
     id: 1,
-    name: "Parafusadeira TB‑21PX 21V",
-    originalPrice: "R$ 299,90",
-    salePrice: "R$ 199,90",
-    discount: "33% OFF",
-    rating: 4.8,
-    reviews: 342,
-    features: ["21V de potência", "Bateria de longa duração", "35 níveis de torque", "LED integrado"],
-    image: "/placeholder.svg",
-    badge: "Mais Vendido",
-    affiliateLink: "https://mercadolivre.com/sec/25r7fXA"
+    name: 'Parafusadeira e Furadeira de Impacto 3/8" WAP K21 ID02 2000 mAh',
+    originalPrice: 'R$ 398,47',
+    salePrice: 'R$ 199,40',
+    discount: '49% OFF',
+    rating: 4.7,
+    reviews: 20328,
+    features: ['Impacto 3/8"', 'Bateria 2000 mAh', 'Muito vendida', 'Excelente avaliação'],
+    image: '/images/image1.png',
+    badge: 'Mais Vendido',
+    affiliateLink: 'https://mercadolivre.com/sec/25r7fXA'
   },
   {
     id: 2,
-    name: "Kit Ferramentas TB‑12E 129 Peças",
-    originalPrice: "R$ 599,90",
-    salePrice: "R$ 399,90",
-    discount: "33% OFF",
+    name: 'Parafusadeira Impacto 21 V WAP K21 + Kit 300 Peças',
+    originalPrice: 'R$ 535,39',
+    salePrice: 'R$ 348,00',
+    discount: '35% OFF',
     rating: 4.9,
     reviews: 218,
-    features: ["129 peças completas", "Maleta resistente", "Chaves de fenda e Phillips", "Alicates profissionais"],
-    image: "/placeholder.svg",
-    badge: "Kit Completo",
-    affiliateLink: "https://mercadolivre.com/sec/25r7fXA"
+    features: ['21 V sem fio', 'Kit 300 peças incluso', '10x sem juros', 'Ideal manutenção doméstica'],
+    image: '/images/image2.png',
+    badge: 'Kit Completo',
+    affiliateLink: 'https://mercadolivre.com/sec/1T2n2QP'
   },
   {
     id: 3,
-    name: "Chave de Impacto TB‑21I 21V",
-    originalPrice: "R$ 399,90",
-    salePrice: "R$ 279,90",
-    discount: "30% OFF",
+    name: 'Chave de Impacto a Bateria 1/2" Motor Brushless CH3500 OZ',
+    originalPrice: 'R$ 535,39',
+    salePrice: 'R$ 319,90',
+    discount: '40% OFF',
     rating: 4.7,
     reviews: 156,
-    features: ["Alto torque", "Sem fio 21V", "3 velocidades", "Impacto ajustável"],
-    image: "/placeholder.svg",
-    badge: "Profissional",
-    affiliateLink: "https://mercadolivre.com/sec/25r7fXA"
+    features: ['Motor Brushless', '1/2 polegada', '24x sem juros', 'Alta potência'],
+    image: '/images/image3.png',
+    badge: 'Profissional',
+    affiliateLink: 'https://mercadolivre.com/sec/1KJEzHZ'
   }
 ];
 
@@ -50,11 +50,6 @@ interface ProductShowcaseProps {
 }
 
 export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) => {
-  const handleBuyClick = (productId: number, defaultLink: string) => {
-    const link = affiliateLinks[productId] || defaultLink;
-    window.open(link, '_blank');
-  };
-
   return (
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
@@ -79,8 +74,8 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
                   {product.badge}
                 </Badge>
               </div>
-              
-              {/* Discount Badge */}
+
+              {/* Discount */}
               <div className="absolute top-4 right-4 z-10">
                 <Badge className="bg-destructive text-destructive-foreground font-bold">
                   {product.discount}
@@ -88,7 +83,6 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
               </div>
 
               <CardHeader className="p-0">
-                {/* Product Image */}
                 <div className="h-64 bg-muted flex items-center justify-center relative overflow-hidden">
                   <img 
                     src={product.image} 
@@ -159,16 +153,32 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
                   </div>
                 </div>
 
-                {/* CTA Button */}
-                <Button 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold group"
-                  size="lg"
-                  onClick={() => handleBuyClick(product.id, product.affiliateLink)}
+                {/* CTA */}
+                <a
+                  href={product.affiliateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Você será redirecionado ao site oficial do Mercado Livre"
+                  className="block"
                 >
-                  <ShoppingCart className="w-5 h-5 mr-2" />
-                  Comprar Agora
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                  <Button 
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold group"
+                    size="lg"
+                  >
+                    <ShoppingCart className="w-5 h-5 mr-2" />
+                    Comprar Agora
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
+
+                {/* Selo de segurança */}
+                <div className="mt-2 text-xs text-muted-foreground text-center">
+                  Compra 100% segura no <strong>Mercado Livre</strong>
+                  <img src="/images/logo-mercado-livre.png" alt="Mercado Livre" className="inline-block h-5 ml-1" />
+                </div>
+                <div className="mt-1 text-center text-xs text-muted-foreground">
+                  🔒 Redirecionamento seguro para o site oficial do Mercado Livre
+                </div>
               </CardContent>
             </Card>
           ))}
