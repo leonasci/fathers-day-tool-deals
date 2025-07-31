@@ -3,36 +3,32 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Carlos Silva",
-    age: 58,
+    name: "Ana Carolina",
     location: "São Paulo, SP",
     rating: 5,
-    text: "Ganhei o kit de ferramentas no Dia dos Pais e foi o melhor presente que já recebi! A qualidade é excepcional e já consegui fazer vários reparos em casa. Meu filho acertou em cheio!",
-    product: "Kit TB‑12E 129 Peças"
+    text: "Encontrei ofertas incríveis no Hub da Promo! As promoções são reais e a compra foi super segura pelo Mercado Livre.",
+    product: "Smartphone Samsung"
   },
   {
-    name: "Roberto Oliveira",
-    age: 52,
-    location: "Rio de Janeiro, RJ",
+    name: "Roberto Mendes",
+    location: "Rio de Janeiro, RJ", 
     rating: 5,
-    text: "A parafusadeira é fantástica! Potente, leve e com bateria que dura muito. Já montei móveis, fiz furos na parede, enfim, resolveu todos os meus problemas. Recomendo demais!",
-    product: "Parafusadeira TB‑21PX"
+    text: "Site confiável e ofertas verificadas. Economizei muito na compra das ferramentas. Recomendo demais!",
+    product: "Kit de Ferramentas"
   },
   {
-    name: "João Santos",
-    age: 61,
+    name: "Juliana Costa",
     location: "Belo Horizonte, MG",
     rating: 5,
-    text: "Como aposentado, adoro fazer pequenos consertos. A chave de impacto me deu uma autonomia incrível. Não preciso mais chamar ninguém para resolver problemas simples.",
-    product: "Chave de Impacto TB‑21I"
+    text: "Navegação simples e ofertas atualizadas. Já comprei várias vezes através dos links do Hub da Promo.",
+    product: "Notebook Gamer"
   },
   {
-    name: "Eduardo Costa",
-    age: 49,
+    name: "Carlos Lima",
     location: "Porto Alegre, RS",
     rating: 5,
-    text: "Minha filha me presenteou e eu fiquei emocionado. Além de útil, senti o carinho dela em ter escolhido algo que eu realmente gostaria de usar. Ferramentas de qualidade profissional!",
-    product: "Kit TB‑12E 129 Peças"
+    text: "Portal muito confiável! Sempre que preciso de algo, consulto primeiro o Hub da Promo. As ofertas são legítimas.",
+    product: "Smart TV"
   }
 ];
 
@@ -80,7 +76,7 @@ export const TestimonialsSection = () => {
                 {/* Author Info */}
                 <div className="border-t pt-4">
                   <div className="font-semibold text-foreground">
-                    {testimonial.name}, {testimonial.age} anos
+                    {testimonial.name}
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {testimonial.location}

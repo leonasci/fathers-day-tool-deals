@@ -56,11 +56,11 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Presentes que Fazem a <span className="text-primary">Diferença</span>
+            Ofertas <span className="text-accent">Verificadas</span> e <span className="text-primary">Confiáveis</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Escolha entre os produtos mais desejados pelos pais brasileiros. 
-            Qualidade profissional com o melhor custo-benefício.
+            Produtos selecionados com os melhores preços e avaliações do Mercado Livre. 
+            Clique com segurança e aproveite as melhores promoções.
           </p>
         </div>
 
@@ -161,8 +161,8 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
                   title="Você será redirecionado ao site oficial do Mercado Livre"
                   className="block"
                   onClick={() => {
-                    if (typeof window !== 'undefined' && typeof gtag !== 'undefined') {
-                      gtag('event', 'click_affiliate_product', {
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click_affiliate_product', {
                         event_category: 'Afiliado',
                         event_label: product.name,
                         value: parseFloat(product.salePrice.replace('R$', '').replace(',', '.'))
@@ -195,11 +195,11 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
 
         {/* Bottom CTA */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 bg-warning/20 text-warning px-4 py-2 rounded-full text-sm font-medium mb-4">
-            🔥 Ofertas válidas apenas até o Dia dos Pais
+          <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
+            🔥 Ofertas atualizadas diariamente
           </div>
           <p className="text-muted-foreground">
-            Não perca tempo! Estas ofertas especiais são limitadas.
+            Não perca tempo! Aproveite os melhores preços do Mercado Livre.
           </p>
         </div>
       </div>

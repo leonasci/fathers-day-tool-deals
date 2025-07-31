@@ -1,36 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Wrench, Heart, DollarSign, Truck, Shield, Clock } from "lucide-react";
+import { Shield, TrendingUp, Zap, ExternalLink, Star, CheckCircle } from "lucide-react";
 
 const benefits = [
   {
-    icon: Wrench,
-    title: "Autonomia Total",
-    description: "Seu pai poderá resolver qualquer reparo sem depender de terceiros. Praticidade e independência em suas mãos."
-  },
-  {
-    icon: Heart,
-    title: "Presente Emocional",
-    description: "Demonstre o quanto você se importa com um presente útil e duradouro que ele usará com orgulho."
-  },
-  {
-    icon: DollarSign,
-    title: "Economia a Longo Prazo",
-    description: "Evite gastos com serviços externos. Um investimento que se paga ao longo do tempo."
-  },
-  {
-    icon: Truck,
-    title: "Frete Grátis",
-    description: "Entrega gratuita em todo o Brasil. Receba em casa sem custos adicionais."
-  },
-  {
     icon: Shield,
-    title: "Garantia Estendida",
-    description: "Produtos com garantia do fabricante. Qualidade e confiabilidade garantidas."
+    title: "100% Seguro",
+    description: "Redirecionamento direto para o Mercado Livre oficial. Suas informações e pagamentos estão protegidos."
   },
   {
-    icon: Clock,
-    title: "Entrega Rápida",
-    description: "Chegue a tempo para o Dia dos Pais. Processamento prioritário para datas comemorativas."
+    icon: TrendingUp,
+    title: "Melhores Preços",
+    description: "Ofertas verificadas e atualizadas diariamente. Só divulgamos promoções realmente vantajosas."
+  },
+  {
+    icon: Zap,
+    title: "Rápido e Fácil",
+    description: "Um clique para acessar as melhores ofertas. Interface simples e navegação intuitiva."
+  },
+  {
+    icon: ExternalLink,
+    title: "Compra Direta",
+    description: "Todas as transações são feitas diretamente com o Mercado Livre, garantindo total confiabilidade."
+  },
+  {
+    icon: Star,
+    title: "Produtos Verificados",
+    description: "Apenas produtos com excelentes avaliações e vendedores confiáveis são divulgados."
+  },
+  {
+    icon: CheckCircle,
+    title: "Curadoria Especializada",
+    description: "Equipe dedicada seleciona as melhores ofertas para você economizar tempo e dinheiro."
   }
 ];
 
@@ -41,10 +41,10 @@ export const BenefitsSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Por Que Escolher <span className="text-primary">The Black Tools</span>?
+            Por Que Confiar no <span className="text-accent">Hub da Promo</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mais que ferramentas, você está presenteando com autonomia, qualidade e momentos especiais.
+            Seu portal seguro e confiável para as melhores ofertas do Mercado Livre
           </p>
         </div>
 
@@ -71,12 +71,12 @@ export const BenefitsSection = () => {
         </div>
 
         {/* Bottom Quote */}
-        <div className="text-center mt-16 p-8 bg-primary/5 rounded-lg border border-primary/10">
+        <div className="text-center mt-16 p-8 bg-accent/5 rounded-lg border border-accent/10">
           <blockquote className="text-2xl font-medium text-foreground mb-4">
-            "O melhor presente é aquele que demonstra cuidado e utilidade. 
-            Ferramentas de qualidade são um investimento no bem-estar do seu pai."
+            "A confiança é fundamental nas compras online. 
+            Hub da Promo conecta você às melhores ofertas com total segurança."
           </blockquote>
-          <cite className="text-muted-foreground">— Especialistas em Dia dos Pais</cite>
+          <cite className="text-muted-foreground">— Especialistas em E-commerce</cite>
         </div>
       </div>
     </section>

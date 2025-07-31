@@ -20,13 +20,13 @@ export const CTASection = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Headline */}
           <h2 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Não Deixe Para Amanhã
+            Não Perca as Melhores Ofertas!
           </h2>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-            O Dia dos Pais está chegando! Garante já o presente perfeito com 
-            <strong className="text-accent"> desconto especial</strong> e 
-            <strong className="text-accent"> frete grátis</strong>.
+            Aproveite agora as promoções mais vantajosas do Mercado Livre. 
+            <strong className="text-accent"> Clique com confiança.</strong> 
+            <strong className="text-accent"> Compre com vantagem.</strong>
           </p>
 
           {/* Urgency Elements */}
