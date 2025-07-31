@@ -160,9 +160,18 @@ export const ProductShowcase = ({ affiliateLinks = {} }: ProductShowcaseProps) =
                   rel="noopener noreferrer"
                   title="Você será redirecionado ao site oficial do Mercado Livre"
                   className="block"
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && typeof gtag !== 'undefined') {
+                      gtag('event', 'click_affiliate_product', {
+                        event_category: 'Afiliado',
+                        event_label: product.name,
+                        value: parseFloat(product.salePrice.replace('R$', '').replace(',', '.'))
+                      });
+                    }
+                  }}
                 >
                   <Button 
-                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold group"
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold group transition-transform hover:scale-105"
                     size="lg"
                   >
                     <ShoppingCart className="w-5 h-5 mr-2" />
