@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
-import { ProductShowcase } from "@/components/ProductShowcase";
+import { CategorizedProducts } from "@/components/CategorizedProducts";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { CTASection } from "@/components/CTASection";
@@ -59,7 +59,7 @@ const Index = () => {
             <Header />
             <HeroSection />
             <div id="products">
-              <ProductShowcase affiliateLinks={affiliateLinks} />
+              <CategorizedProducts />
             </div>
             <BenefitsSection />
             <TestimonialsSection />
