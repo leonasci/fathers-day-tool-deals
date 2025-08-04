@@ -8,8 +8,8 @@ const products = [
     id: 1,
     name: 'Parafusadeira e Furadeira de Impacto 3/8" WAP K21 ID02 2000 mAh',
     originalPrice: 'R$ 398,47',
-    salePrice: 'R$ 199,40',
-    discount: '49% OFF',
+    salePrice: 'R$ 229,89',
+    discount: '42% OFF',
     rating: 4.7,
     reviews: 20328,
     features: ['Impacto 3/8"', 'Bateria 2000 mAh', 'Muito vendida', 'Excelente avaliação'],
@@ -21,8 +21,8 @@ const products = [
     id: 2,
     name: 'Parafusadeira Impacto 21 V WAP K21 + Kit 300 Peças',
     originalPrice: 'R$ 535,39',
-    salePrice: 'R$ 348,00',
-    discount: '35% OFF',
+    salePrice: 'R$ 286,87',
+    discount: '46% OFF',
     rating: 4.9,
     reviews: 218,
     features: ['21 V sem fio', 'Kit 300 peças incluso', '10x sem juros', 'Ideal manutenção doméstica'],
@@ -42,6 +42,18 @@ const products = [
     image: '/images/image3.png',
     badge: 'Profissional',
     affiliateLink: 'https://mercadolivre.com/sec/1KJEzHZ'
+  },{
+    id: 4,
+    name: 'Smartphone Jovi Y19s 256gb, 4+4gb Ram Turbo, Câmera 50mp, Bateria 5500mah',
+    originalPrice: 'R$ 535,39',
+    salePrice: 'R$ 319,90',
+    discount: '40% OFF',
+    rating: 4.7,
+    reviews: 156,
+    features: ['Memória RAM: 8 GB', 'Tela LCD de 6.68"', '18x sem juros', 'Câmeras frontais de 5Mpx', 'Bateria de 5.5mAh.'],
+    image: '/images/jovy19s.png',
+    badge: 'Profissional',
+    affiliateLink: 'https://mercadolivre.com/sec/1UCen6h'
   }
 ];
 
