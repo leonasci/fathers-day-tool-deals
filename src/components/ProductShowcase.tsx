@@ -42,7 +42,8 @@ const products = [
     image: '/images/image3.png',
     badge: 'Profissional',
     affiliateLink: 'https://mercadolivre.com/sec/1KJEzHZ'
-  },{
+  },
+  {
     id: 4,
     name: 'Smartphone Jovi Y19s 256gb, 4+4gb Ram Turbo, Câmera 50mp, Bateria 5500mah',
     originalPrice: 'R$ 535,39',
